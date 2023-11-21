@@ -1,0 +1,19 @@
+timings:
+  enabled: false
+settings:
+  # Use alternative luck formula by Aikar, allowing luck to be applied to items that have no quality defined. Makes major changes to fishing formulas.
+  # Defaulty disabled
+  use-alternative-luck-formula: true
+  bungee-online-mode: true
+  async-chunks:
+    threads: -1
+  packet-limiter:
+    kick-message: '&cSent too many packets'
+    limits:
+      all:
+        interval: 7.0
+        max-packet-rate: 500.0
+      PacketPlayInAutoRecipe:
+        interval: 4.0
+        max-packet-rate: 5.0
+        action: DROP
