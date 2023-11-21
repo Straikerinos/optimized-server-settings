@@ -1,0 +1,22 @@
+settings:
+  use-map-color-cache: true
+  warn-on-overload: true
+spawn-limits:
+  monsters: 30
+  animals: 10
+  water-animals: 2
+  water-ambient: 2
+  water-underground-creature: 3
+  axolotls: 3
+  ambient: 1
+chunk-gc:
+  period-in-ticks: 250
+ticks-per:
+  axolotl-spawns: 400
+  animal-spawns: 200
+  monster-spawns: 3
+  water-spawns: 400 # fish, dolphin
+  water-ambient-spawns: 400 # squids
+  water-underground-creature-spawns: 400
+  ambient-spawns: 1600 # bats
+  autosave: 6000

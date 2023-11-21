@@ -1,0 +1,70 @@
+chunk-system:
+  gen-parallelism: true
+  io-threads: 3
+  worker-threads: 6
+collisions:
+  enable-player-collisions: true
+  send-full-pos-for-hard-colliding-entities: true
+commands:
+  fix-target-selector-tag-completion: true
+  suggest-player-names-when-null-tab-completions: true
+console:
+  enable-brigadier-completions: true
+  enable-brigadier-highlighting: true
+item-validation:
+  book:
+    author: 8192
+    page: 16384
+    title: 8192
+  book-size:
+    page-max: 2560
+    total-multiplier: 0.98
+  display-name: 8192
+  lore-line: 8192
+  resolve-selectors-in-books: false
+logging:
+  deobfuscate-stacktraces: true
+  log-player-ip-addresses: true
+misc:
+  compression-level: default
+  fix-entity-position-desync: true
+  lag-compensate-block-breaking: true
+  load-permissions-yml-before-plugins: true
+  max-joins-per-tick: 3
+  region-file-cache-size: 256
+  strict-advancement-dimension-check: false
+  # Use alternative luck formula by Aikar, allowing luck to be applied to items that have no quality defined. Makes major changes to fishing formulas.
+  # Defaulty disabled
+  use-alternative-luck-formula: true
+  use-dimension-type-for-custom-spawners: false
+packet-limiter:
+  all-packets:
+    action: KICK
+    interval: 7.0
+    max-packet-rate: 500.0
+  kick-message: <red><lang:disconnect.exceeded_packet_rate>
+  overrides:
+    ServerboundPlaceRecipePacket:
+      action: DROP
+      interval: 4.0
+      max-packet-rate: 5.0
+proxies:
+  bungee-cord:
+    online-mode: true
+scoreboards:
+  save-empty-scoreboard-teams: false
+  track-plugin-scoreboards: false
+spam-limiter:
+  incoming-packet-threshold: 300
+  recipe-spam-increment: 1
+  recipe-spam-limit: 20
+  tab-spam-increment: 1
+  tab-spam-limit: 500
+unsupported-settings:
+  allow-grindstone-overstacking: false
+  allow-headless-pistons: false
+  allow-permanent-block-break-exploits: false
+  allow-piston-duplication: false
+  compression-format: ZLIB
+  # If you are running under bungee/velocity, set this to false
+  perform-username-validation: true
