@@ -1,0 +1,13 @@
+[advanced]
+	# Enables TCP fast open support on the proxy. Requires the proxy to run on Linux.
+	tcp-fast-open = true
+	# How large a Minecraft packet has to be before we compress it. Setting this to zero will
+	# compress all packets, and setting it to -1 will disable compression entirely.
+	compression-threshold = 512
+	# Enables logging of player connections when connecting to the proxy, switching servers
+	# and disconnecting from the proxy.
+	log-player-connections = false
+	# Enables BungeeCord plugin messaging channel support on Velocity.
+	bungee-plugin-message-channel = false
+	# Shows ping requests to the proxy from clients.
+	show-ping-requests = false
