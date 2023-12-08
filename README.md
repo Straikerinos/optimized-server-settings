@@ -1,4 +1,5 @@
 Enjoy this preset optimized server files!
+
 Pterodactyl install egg script modification:
 
 ```bash
