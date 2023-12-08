@@ -36,4 +36,4 @@ echo -e "Downloading optimized paper-world-defaults.yml (1.19+)"
 curl -o config/paper-world-defaults.yml https://raw.githubusercontent.com/Straikerinos/optimized-server-settings/main/paper-world-defaults.yml
 fi
 
-fi```
+fi
