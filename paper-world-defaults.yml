@@ -114,9 +114,6 @@ entities:
       wither-skeleton: true
     spiders-immune-to-poison-effect: true
     undead-immune-to-certain-effects: true
-  sniffer:
-    boosted-hatch-time: default
-    hatch-time: default
   spawning:
     all-chunks-are-slime-chunks: false
     alt-item-despawn-rate:
@@ -166,7 +163,6 @@ entities:
     non-player-arrow-despawn-rate: '100'
     per-player-mob-spawns: true
     scan-for-legacy-ender-dragon: true
-    skeleton-horse-thunder-spawn-chance: default
     slime-spawn-height:
       slime-chunk:
         maximum: 40.0
@@ -187,17 +183,6 @@ entities:
       spawn-chance-min: 25
       spawn-day-length: 24000
       spawn-minute-length: 1200
-    wateranimal-spawn-height:
-      maximum: default
-      minimum: default
-  tracking-range-y:
-    animal: default
-    display: default
-    enabled: false
-    misc: default
-    monster: default
-    other: default
-    player: default
 environment:
   disable-explosion-knockback: false
   disable-ice-and-snow: false
