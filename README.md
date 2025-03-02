@@ -1,7 +1,8 @@
 Enjoy this preset optimized server files!
 
-Pterodactyl install egg script modification:
+Pterodactyl install eggs script modification:
 
+### Paper/Purpur
 ```bash
 if [ ! -f server.properties ]; then
 echo -e "Downloading optimized server.properties"
@@ -37,3 +38,20 @@ curl -o config/paper-world-defaults.yml https://raw.githubusercontent.com/Straik
 fi
 
 fi
+```
+
+### Vanilla/Forge
+```bash
+if [ ! -f server.properties ]; then
+echo -e "Downloading optimized server.properties"
+curl -o server.properties https://raw.githubusercontent.com/Straikerinos/optimized-server-settings/main/server.properties
+fi
+```
+
+### Velocity
+```bash
+if [ ! -f velocity.toml ]; then
+echo -e "Downloading optimized velocity.toml"
+curl https://raw.githubusercontent.com/Straikerinos/optimized-server-settings/main/velocity.toml -o velocity.toml
+fi
+```
