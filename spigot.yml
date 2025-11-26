@@ -1,14 +1,96 @@
+# This is the Spigot configuration file for Paper.
+# As you can see, there's tons to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+#
+# If you need help with the configuration or have any questions related to Paper,
+# join us in our Discord or check the docs page.
+#
+# File Reference: https://docs.papermc.io/paper/reference/spigot-configuration/
+# Docs: https://docs.papermc.io/
+# Discord: https://discord.gg/papermc
+# Website: https://papermc.io/
+
+advancements:
+  disable-saving: false
+  disabled:
+  - minecraft:story/disabled
+messages:
+  whitelist: You are not whitelisted on this server!
+  unknown-command: Unknown command. Type "/help" for help.
+  server-full: The server is full!
+  outdated-client: Outdated client! Please use {0}
+  outdated-server: Outdated server! I'm still on {0}
+  restart: Server is restarting
+players:
+  disable-saving: false
 settings:
+  bungeecord: false
+  save-user-cache-on-stop-only: false
+  moved-wrongly-threshold: 0.0625
+  moved-too-quickly-multiplier: 10.0
+  timeout-time: 60
+  restart-on-crash: true
+  restart-script: ./start.sh
+  attribute:
+    maxAbsorption:
+      max: 2048.0
+    maxHealth:
+      max: 1024.0
+    movementSpeed:
+      max: 1024.0
+    attackDamage:
+      max: 2048.0
+  debug: false
   sample-count: 0
   player-shuffle: 0
   user-cache-size: 1000
-  netty-threads: 8
+  netty-threads: 4
   log-villager-deaths: false
   log-named-deaths: false
 commands:
+  log: true
+  tab-complete: 0
+  silent-commandblock-console: false
   send-namespaced: false
+  enable-spam-exclusions: false
 world-settings:
   default:
+    thunder-chance: 100000
+    zombie-aggressive-towards-villager: true
+    nerf-spawner-mobs: false
+    unload-frozen-chunks: false
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      beetroot-modifier: 100
+      carrot-modifier: 100
+      potato-modifier: 100
+      torchflower-modifier: 100
+      wheat-modifier: 100
+      netherwart-modifier: 100
+      vine-modifier: 100
+      cocoa-modifier: 100
+      bamboo-modifier: 100
+      sweetberry-modifier: 100
+      kelp-modifier: 100
+      twistingvines-modifier: 100
+      weepingvines-modifier: 100
+      cavevines-modifier: 100
+      glowberry-modifier: 100
+      pitcherplant-modifier: 100
+    hunger:
+      jump-walk-exhaustion: 0.05
+      jump-sprint-exhaustion: 0.2
+      combat-exhaustion: 0.1
+      regen-exhaustion: 6.0
+      swim-multiplier: 0.01
+      sprint-multiplier: 0.1
+      other-multiplier: 0.0
+    verbose: false
     below-zero-generation-in-existing-chunks: true
     hopper-can-load-chunks: false
     hopper-alt-ticking: true
@@ -37,10 +119,11 @@ world-settings:
     ticks-per:
       hopper-transfer: 12
       hopper-check: 8
+      
     entity-activation-range:
       animals: 16
-      monsters: 32
-      raiders: 48
+      monsters: 24
+      raiders: 32
       misc: 8
       water: 8
       villagers: 16
@@ -66,3 +149,7 @@ world-settings:
     max-tick-time:
       tile: 20
       entity: 20
+config-version: 12
+stats:
+  disable-saving: false
+  forced-stats: {}
