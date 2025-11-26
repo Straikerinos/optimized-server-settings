@@ -1,20 +1,21 @@
 settings:
   use-map-color-cache: true
-  warn-on-overload: true
+  # Set to 0 if you are under proxy
+  connection-throttle: 4000
 spawn-limits:
   monsters: 30
   animals: 10
-  water-animals: 2
+  water-animals: 5
   water-ambient: 2
   water-underground-creature: 3
   axolotls: 3
   ambient: 1
 chunk-gc:
-  period-in-ticks: 250
+  period-in-ticks: 80
 ticks-per:
   axolotl-spawns: 400
-  animal-spawns: 200
-  monster-spawns: 3
+  animal-spawns: 400
+  monster-spawns: 4
   water-spawns: 400 # fish, dolphin
   water-ambient-spawns: 400 # squids
   water-underground-creature-spawns: 400
